@@ -1,0 +1,343 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Home -->
+    <section class="home py-5 d-flex align-items-center" id="header">
+        <div class="container text-light py-5" data-aos="fade-right">
+            <h1 class="headline">The Right <span class="home_text">Packaging</span><br>Materials You Need</h1>
+            <p class="para para-light py-3 pyv">We have setup our organization in India and are engaged in manufacturing
+                and
+                exporting of HDPE/PP Bags & Fabrics. With the zeal of art, capability of technical manufacturing
+                processes and vision to be recognized globally, Our team at Windsor keeps on giving the best possible to
+                our respected customers.</p>
+            <div class="d-flex align-items-center">
+                <p class="p-2"><i class="fas fa-handshake fa-lg"></i></p>
+                <p>Integrity with compassion</p>
+            </div>
+            <div class="d-flex align-items-center">
+                <p class="p-2"><i class="fas fa-check-double fa-lg"></i></p>
+                <p>Quality Assurance</p>
+            </div>
+            <div class="my-3">
+                <a class="btn" href="{% url 'contact' %}">Get A Quote</a>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of home -->
+
+
+
+
+    <!-- About -->
+    <section class="about d-flex align-items-center text-light py-5" id="about">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <p>ABOUT US</p>
+                    <h1>Windson Polypack LLP</h1>
+                    <p class="py-2 para-light pyv">is equiped with the finest machineries and infrastructure plants
+                        situated at Morbi-Gujarat,engaged in manufacturing and exporting of PP Bags & Fabrics,
+                        Multi-color bags. A common vision to satisfy the needs of customers worldwide motivates our
+                        brilliant team is constantly improving the standards of Woven Fabrics/Bags and keep on
+                        innovating with latest specifications standards.</p>
+                    <!-- <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p> -->
+
+                    <div class="my-3">
+                        <a class="btn" href="{% url 'about' %}">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down">
+                    <img class="img-fluid" src="{% static '/images/about.png' %}" alt="about">
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of about -->
+
+    <section class="product-home d-flex align-items-center text-light py-5" id="about">
+
+        <div class="container my-container">
+            <div class="text-center pb-4">
+                <h2 class="py-2">OUR PRODUCTS</h2>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h1>PP Woven Bags & Fabric</h1>
+                    <p class="py-2 para-light pyv">PP Woven Fabric is material made of thermoplastic resins. These
+                        resins are produced by the process of polymerization. PP Woven Bags are easy to clean, store and
+                        destroy. Being a weather-resistant material, you can use the PP Woven bags throughou the year.
+                        They are long-lasting and reusable making it environment-friendly packaging material.</p>
+                    <div class="my-3">
+                        <a class="btn" href="{% url 'pp-woven-bags' %}">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down">
+                    <img class="img-fluid" src="{% static '/images/pp.jpg' %}" alt="about">
+                </div>
+            </div> <!-- end of row -->
+            <div class="row d-flex align-items-center my-product-2">
+                <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-right">
+                    <img class="img-fluid" src="{% static '/images/hdpe.jpg' %}" alt="about">
+                </div>
+                <div class="col-lg-7" data-aos="fade-up">
+                    <h1>HDPE Woven Bags & Fabric</h1>
+                    <p class="py-2 para-light pyv">HDPE is one of the most durable and versatile thermoplastics in
+                        today's market. It is made under controlled conditions by applying intense heat to petroleum. It
+                        is even recyclable. It is used in variety of materials like bottles, automotive parts, furniture
+                        and different construction products.</p>
+
+                    <div class="my-3">
+                        <a class="btn" href="{% url 'pp-woven-fabrics' %}">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- end of about -->
+
+
+
+    <!-- WHYUS -->
+    <section class="whyus d-flex align-items-center py-5">
+        <div class="container-fluid text-light">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right">
+                    <img class="img-fluid bag-img" src="{% static '/images/whyus.jpg' %}" alt="work">
+                </div>
+                <div class="col-lg-5 d-flex align-items-center px-4 py-3" data-aos="">
+                    <div class="row">
+                        <div class="text-center text-lg-start py-4 pt-lg-0">
+                            <!-- <p>OUR WORK</p> -->
+                            <h2 class="py-2">WHY US?</h2>
+                            <p class="para-light"><i class="fas fa-angle-double-right "></i> Fastest order to delivery
+                                turnaround in the industry</p>
+                            <p class="para-light"><i class="fas fa-angle-double-right "></i> World class infrastructure
+                                for extrusion, loom & printing</p>
+                            <p class="para-light"><i class="fas fa-angle-double-right "></i> All range of fabric weight
+                                , width and denier</p>
+                            <p class="para-light"><i class="fas fa-angle-double-right "></i> Fully Automated Plant and
+                                Skilled Labour</p>
+                            <p class="para-light"><i class="fas fa-angle-double-right "></i> Complied with IIP certified
+                                testing procedure</p>
+
+                        </div>
+                        <div class="container" data-aos="fade-up">
+                            <div class="row g-5">
+                                <div class="col-6 figure">
+                                    <i class="fas fa-briefcase fa-2x text-start"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1258"
+                                        data-purecounter-duration="3">1</h2>
+                                    <p>ORDERS COMPLETED</p>
+                                </div>
+                                <div class="col-6 figure">
+                                    <i class="fas fa-users fa-2x"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1255"
+                                        data-purecounter-duration="3">1</h2>
+                                    <p>CUSTOMER ACTIVE</p>
+                                </div>
+                            </div>
+                        </div> <!-- end of container -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of col-lg-5 -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of work -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-1 testimonial text-light d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="text-center w-lg-75 m-auto pb-4">
+                    <h2 class="py-2">Industries We Serve</h2>
+                </div>
+            </div> <!-- end of row -->
+            <div class="row p-2" data-aos="zoom-in">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <div class="d-flex flex-column pt-4 align-items-center">
+                                            <div class="">
+                                                <i class="fas fa-map-marker fa-4x"></i>
+                                            </div>
+                                            <div class="row">
+                                                <h3>Petrochemicals</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <div class="d-flex flex-column pt-4 align-items-center">
+                                            <div class="">
+                                                <i class="fas fa-box-open fa-4x"></i>
+                                            </div>
+                                            <div class="row">
+                                                <h3>Packaging</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <div class="d-flex flex-column pt-4 align-items-center">
+                                            <div class="">
+                                                <i class="fas fa-truck-arrow-right fa-4x"></i>
+                                            </div>
+                                            <div class="row">
+                                                <h3>Transportation</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <div class="d-flex flex-column pt-4 align-items-center">
+                                            <div class="">
+                                                <i class="fas fa-screwdriver-wrench fa-4x"></i>
+                                            </div>
+                                            <div class="row">
+                                                <h3>Construction</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                        <div class="d-flex flex-column pt-4 align-items-center">
+                                            <div class="">
+                                                <i class="fas fa-tree fa-4x"></i>
+                                            </div>
+                                            <div class="row">
+                                                <h3>Agriculture</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of testimonials -->
+
+
+
+
+
+    <!-- Contact -->
+    <section class="contact d-flex align-items-center py-5" id="contact">
+        <div class="container-fluid text-light">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center px-lg-5"
+                    data-aos="fade-right">
+                    <div style="width:90%">
+                        <div class="text-center text-lg-start py-4 pt-lg-0">
+                            <p>CONTACT</p>
+                            <h2 class="py-2">Send your query</h2>
+                            <p class="para-light">Don’t Hesitate to contact with us for any kind of information</p>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group py-2">
+                                        <input type="text" class="form-control form-control-input"
+                                            id="exampleFormControlInput1" placeholder="Enter name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group py-2">
+                                        <input type="email" class="form-control form-control-input"
+                                            id="exampleFormControlInput2" placeholder="Enter phone number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group py-1">
+                                <input type="email" class="form-control form-control-input"
+                                    id="exampleFormControlInput3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group py-2">
+                                <textarea class="form-control form-control-input" id="exampleFormControlTextarea1"
+                                    rows="6" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <a class="btn form-control-submit-button" href="#your-link">Submit</a>
+                        </div>
+                    </div> <!-- end of div -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
+                    <img class="img-fluid d-none d-lg-block" src="{% static '/images/contact.jpg' %}" alt="contact">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of contact -->
+
+
+    <!-- Location -->
+    <section class="location text-light py-5">
+        <div class="container" data-aos="zoom-in">
+            <div class="row">
+                <div class="col-sm-3 d-flex align-items-center">
+                    <div class="p-2"><i class="far fa-map fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>ADDRESS</h6>
+                        <p>AT-TANKARA, Morbi-363650</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 d-flex align-items-center">
+                    <div class="p-2"><i class="fas fa-mobile-alt fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>CALL FOR QUERY</h6>
+                        <p>+91 (898) 018 1097</p>
+                        <!-- <p>+91 8980181097</p> -->
+                    </div>
+                </div>
+                <div class="col-sm-3 d-flex align-items-center">
+                    <div class="p-2"><i class="far fa-envelope fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>SEND US MESSAGE</h6>
+                        <p class="contactEmail">windsonpolypackllp@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 d-flex align-items-center">
+                    <div class="p-2"><i class="far fa-clock fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>OPENING HOURS</h6>
+                        <p>09:00 AM - 18:00 PM</p>
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of location -->
+
+    {% endblock %}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Windson Polypack LLP</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/all.css' %}">
+    <link rel="stylesheet" href="{% static '/css/aos.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/swiper.css' %}">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="icon" href="{% static '/images/loder.png' %}">
+</head>
+
+<body>
+    <div class="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static '/images/loder.png' %}" alt="">
+                    <p style="color: #e8630aff;">Windson</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="{% url 'home' %}"><img src="{% static '/images/logo.svg' %}"
+                    alt="Windson Polypack LLP"></a>
+                   
+            <!-- <a class="navbar-brand logo-image" href="{% url 'home' %}"><img src="{% static '/images/crop logo.png' %}"
+                        alt="Windson Polypack LLP"></a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#">Products</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="{% url 'pp-woven-fabrics' %}">PP Woven Fabrics</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="{% url 'pp-woven-bags' %}">PP Woven Bags</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link quote-link getQuote" href="{% url 'contact' %}">Get A Quote</a>
+                        <!-- <button class="quote-link" href="#">Get a Quote</button> -->
+                    </li>
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- Footer -->
+    <section class="footer text-light {% block name %} {% endblock %} ">
+        <div class="container">
+            <div class="row" data-aos="fade-right">
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div class="d-flex align-items-center">
+                        <h4 class="">Windson Polypack LLP</h4>
+
+                    </div>
+                    <p class="py-3 para-light pyv">A leading manufacturer of premium quality PP Woven Fabrics and
+                        Bags/Sacks
+                        in India.</p>
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <a href="#your-link">
+                                <i class="fab fa-facebook-f fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div class="me-3">
+                            <a href="#your-link">
+                                <i class="fab fa-twitter fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div class="me-3">
+                            <a href="#your-link">
+                                <i class="fab fa-instagram fa-2x py-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div>
+                        <h4 class="py-2">Quick Links</h4>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="{% url 'about' %}">
+                                <p class="ms-3">About</p>
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="{% url 'pp-woven-fabrics' %}">
+                                <p class="ms-3">PP Woven Fabrics</p>
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="{% url 'pp-woven-bags' %}">
+                                <p class="ms-3">PP Woven Bags</p>
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="{% url 'contact' %}">
+                                <p class="ms-3">Contact</p>
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- end of col -->
+
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div>
+                        <h4 class="py-2">Contact Us</h4>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+918849135782">
+                                <p class="ms-3">+91 (884) 913 5782</p>
+                            </a>
+
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+918980181097">
+                                <p class="ms-3">+91 (898) 018 1097</p>
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:windsonpolypackllp@gmail.com">
+                                <p class="ms-3">windsonpolypackllp@gmail.com</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div> <!-- end of col -->
+
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div class="d-flex align-items-center">
+                        <h4>Address</h4>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-map-marker" style="margin-bottom: 2.5rem !important;"></i>
+                        <a href="#">
+                        <p class="ms-3 ">OPP SURYAJIT INDUSTRIAL LLP,<br>
+                            AT-TANKARA, AMARAPAR ROAD, <br>
+                            Morbi, Gujarat, 363650</p>
+                        </a>
+                    </div>
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of footer -->
+
+
+    <!-- Bottom -->
+    <div class="bottom py-2 text-light">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <p>© Copyright 2022. Windson Polypack LLP. All Rights Reserved | Developed by <a
+                        href="https://www.codexshell.com"> CodeXShell Technologies </a> </p><br>
+
+            </div>
+            <div>
+                <a href=""><i class="fas fa-envelope fa-lg p-1"></i></a>
+                <i class="fab fa-linkedin fa-lg p-1"></i>
+                <i class="fab fa-instagram-square fa-lg p-1"></i>
+                <i class="fab fa-facebook-square fa-lg p-1"></i>
+            </div>
+        </div> <!-- end of container -->
+    </div> <!-- end of bottom -->
+
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="{% static '/images/up-arrow.png' %}" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+
+
+    <!-- Scripts -->
+    <script src="{% static '/js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static '/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/js/purecounter.min.js' %}"></script>
+    <script src="{% static '/js/swiper.min.js' %}"></script>
+    <script src="{% static '/js/aos.js' %}"></script>
+    <script src="{% static '/js/script.js' %}"></script>
+
+</body>
+
+</html>

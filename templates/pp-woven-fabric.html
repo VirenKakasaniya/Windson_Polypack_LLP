@@ -1,0 +1,57 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <!-- Header -->
+    <header class="ex-header" data-aos="fade-down">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>PP Woven Fabrics</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Services -->
+    <section class="services d-flex align-items-center py-5" id="services">
+        <div class="container text-light">
+            <div class="text-center pb-4" data-aos="fade-left">
+                <h2 class="py-2">PP Woven Fabrics</h2>
+                <p class="para-light pyv product-p">PP Woven Fabric is material made of thermoplastic resins. These
+                    resins are
+                    produced by the process of polymerization. PP Woven Bags are easy to clean, store and destroy. Being
+                    a weather-resistant material, you can use the PP Woven bags throughou the year. They are
+                    long-lasting and reusable making it environment-friendly packaging material.</p>
+                <p class="para-light pyv product-p">Each of our PP Woven Fabric Products, including Circular PP Woven
+                    Fabric-also
+                    known as Tubular PP Woven Fabric and Flat PP Woven Fabric are made using high-quality raw materials
+                    and cutting edge technology, has a huge demand in the local and global market.</p>
+                <p class="para-light pyv product-p"> <b>WINDSON</b> is an one-stop place to buy top-notch
+                    quality PP Woven Fabric Products that have high durability and non-staining characteristics.</p>
+            </div>
+            <div class="row gy-4 py-2 mb-5" data-aos="zoom-in">
+                <div class="col-lg-4">
+                    <div class="card bg-transparent">
+                        <img class="img-fluid" src="{% static '/images/flat-pp.jpg' %}" alt="Flat-PP">
+                        <h2 class="btn bagname-p mt-2">Flat Woven PP Fabric</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-transparent">
+                        <img class="img-fluid" src="{% static '/images/circular-pp.webp' %}" alt="Circular-PP">
+                        <h2 class="btn bagname-p mt-2">Circular Woven PP Fabric</h2>
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+
+    </section> <!-- end of services -->
+
+
+    {% endblock %}
+    {% block name %} footer-1 {% endblock %}
